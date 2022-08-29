@@ -10,6 +10,7 @@ pub struct Pallidrome {
 
 #[near_bindgen]
 impl Pallidrome {
+    // set up sample pallindrome words
     #[init]
     #[private]
     fn new() -> Self {
@@ -21,10 +22,12 @@ impl Pallidrome {
         }
     }
 
+    // get all palldrome words in the smart contract state
     fn get_sample(&self)->Vec<String>{
         return self.all_pallindromes.clone();
     }
 
+    // check if a word is a pallindrome and add it to the smart contract state.
     fn test_word(& mut self,phrase: String){
         let res = self.check_pallindome(phrase.clone());
         if res{

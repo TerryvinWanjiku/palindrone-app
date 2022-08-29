@@ -1,4 +1,9 @@
 # Rust Smart Contract Template
+This is rust near smart contract that checks if a word is a pallindrome and adds it to a vector .
+From the smart contract you can get all the pallindomes
+The logic to check if a word is a pallindrome is inpires by
+`https://crates.io/crates/palindrome`
+
 
 ## Getting started
 
